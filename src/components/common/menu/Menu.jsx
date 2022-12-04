@@ -7,7 +7,7 @@ const Menu = ({ active, setActive }) => {
 
     useEffect(() => {
         setActive(false)
-    }, [location])
+    }, [location,setActive])
 
     return (
         <ul className={`menu ${active ? 'active' : ''}`}>
